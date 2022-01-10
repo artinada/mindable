@@ -1,0 +1,20 @@
+{
+  "name": "mindable",
+  "version": "1.0.0",
+  "description": "Hiring Challenge - QA",
+  "main": "index.js",
+  "scripts": {
+    "testcafe:chrome": "testcafe chrome --reporter list -s takeOnFails=true",
+    "testcafe:chrome:headless": "testcafe chrome:headless -s takeOnFails=true",
+    "testcafe:iphone": "testcafe chrome:emulation:device='iPhone X' -s takeOnFails=true",
+    "prettier": "prettier './src/**/*.ts'",
+    "prettier:fix": "prettier -w './src/**/*.ts'"
+  },
+  "author": "Nadiia Kamenska",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "prettier": "^2.5.1",
+    "testcafe": "^1.18.1"
+  }
+}
